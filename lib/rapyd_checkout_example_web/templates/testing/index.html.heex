@@ -1,0 +1,10 @@
+<p><%= @response["status"]["message"] %></p>
+
+<%= if @response["data"] do %>
+<h2 class="text-xlg font-bold">Supported Country list </h2>
+<ul>
+<%= for country <- @response["data"] do %>
+    <li><%= country["name"] %></li>
+<% end %>
+</ul>
+<% end %>
