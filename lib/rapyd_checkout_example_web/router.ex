@@ -22,11 +22,6 @@ defmodule RapydCheckoutExampleWeb.Router do
 
     live "/", PageLive, :index
     get "/products", ProductController, :index
-    get "/products/hosted-checkout", ProductController, :hosted_checkout
-    get "/products/toolkit-checkout", ProductController, :toolkit_checkout
-    get "/testing", TestingController, :index
-    post "/checkout-redirect", ProductController, :checkout_redirect
-    get "/checkout", ProductController, :checkout
   end
 
   # Other scopes may use custom stacks.
